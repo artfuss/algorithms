@@ -1,4 +1,4 @@
-MOD = 7
+MOD = 25
 
 def egcd(a,b):
     if b==0: return (1,0,a)
@@ -11,9 +11,8 @@ def sub(a,b):
     return (a-b)%MOD
 def mul(a,b):
     return (a*b)%MOD
-#only if b and M are coprime
+#only if b and MOD are coprime
 def div(a,b):
-    return mul(a,egcd(1,b)[0])
+    return mul(a,egcd(MOD,b)[1])
 def exp(a,b):
     return pow(a,b,MOD)
-
