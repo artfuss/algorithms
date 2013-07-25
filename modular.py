@@ -1,5 +1,6 @@
 MOD = 25
 
+#extended eculid gcd
 def egcd(a,b):
     if b==0: return (1,0,a)
     x,y,d = egcd(b,a%b)
@@ -12,6 +13,7 @@ def sub(a,b):
 def mul(a,b):
     return (a*b)%MOD
 #only if b and MOD are coprime
+#modulo multiplicative inverse
 def div(a,b):
     return mul(a,egcd(MOD,b)[1])
 def exp(a,b):
