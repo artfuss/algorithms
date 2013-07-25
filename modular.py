@@ -1,6 +1,6 @@
 MOD = 25
 
-#extended eculid gcd
+#extended euclid gcd
 def egcd(a,b):
     if b==0: return (1,0,a)
     x,y,d = egcd(b,a%b)
