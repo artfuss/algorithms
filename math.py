@@ -7,3 +7,13 @@ def exp(base,exponent):
         exponent /= 2
         base = (base * base)
     return result
+
+'''
+n choose r
+'''
+def nCk(n,k):
+    r = 1
+    if k > n-k: k = n-k
+    for i in xrange(1,k+1):
+        r = (r*(n-k+i))/i;
+    return r
