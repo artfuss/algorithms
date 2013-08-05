@@ -9,7 +9,7 @@ def exp(base,exponent):
     return result
 
 '''
-n choose r
+n choose k
 '''
 def nCk(n,k):
     r = 1
