@@ -15,6 +15,6 @@ def mul(a,b):
 #only if b and MOD are coprime
 #modulo multiplicative inverse
 def div(a,b):
-    return mul(a,egcd(MOD,b)[1])
+    return mul(a,egcd(MOD,b)[1])%MOD
 def exp(a,b):
     return pow(a,b,MOD)
