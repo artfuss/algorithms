@@ -1,6 +1,6 @@
 '''
 class to build a list of all primes
-below n using sieve of erasthosnes
+below n using sieve of Eratosthenes
 '''
 class primes():
     def __init__(self,n):
